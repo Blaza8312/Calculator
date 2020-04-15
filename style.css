@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: lightslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Grid Container*/
+.calculator {
+  width: 50vw;
+  height: 100vh;
+  border: 2px solid darkslategrey;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20% 16% 16% 16% 16% 16%;
+  grid-template-areas:
+    "header header header header"
+    "itemtwo itemthree itemfour itemfive";
+  justify-items: center;
+  align-items: center;
+}
+/*Global*/
+button {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  padding: 2vw;
+  border: 2px solid lightgray;
+}
+button:hover {
+  opacity: 0.8;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+/*Grid Area Name*/
+.item-1 {
+  grid-area: header;
+  justify-self: stretch;
+  align-self: stretch;
+}
+/*Grid Area Names*/
+.item-2 {
+  grid-area: itemtwo;
+}
+.item-3 {
+  grid-area: itemthree;
+}
+.item-4 {
+  grid-area: itemfour;
+}
+.item-5 {
+  grid-area: itemfive;
+}
+/*Grid Rows-Columns spending more space*/
+.item-17 {
+  grid-column: 4/5;
+  grid-row: 5/7;
+}
+.item-18 {
+  grid-row: 6/7;
+  grid-column: 1/3;
+}
+
+/*Pracite Down There*/
